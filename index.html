@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syed Raqueed Bin Alvee | Electronics Engineer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="animated-background">
+    <svg class="circuit-bg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <pattern id="circuit-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+        <path d="M10 10 H90 M10 50 H40 M60 50 H90 M50 10 V90 M10 90 H90" stroke="var(--circuit-color)" fill="none" stroke-width="2" stroke-linecap="round" stroke-dasharray="5,5" class="circuit-path" />
+        <path d="M30 30 Q50 10 70 30 T90 50" stroke="var(--circuit-color)" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4,3" class="circuit-path" />
+        <path d="M20 70 Q40 90 70 60" stroke="var(--circuit-color)" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4,4" class="circuit-path" />
+        <circle cx="10" cy="10" r="3" fill="var(--primary)" class="circuit-node" />
+        <circle cx="90" cy="10" r="3" fill="var(--primary)" class="circuit-node" />
+        <circle cx="10" cy="90" r="3" fill="var(--primary)" class="circuit-node" />
+        <circle cx="90" cy="90" r="3" fill="var(--primary)" class="circuit-node" />
+        <circle cx="50" cy="10" r="3" fill="var(--accent)" class="circuit-node" />
+        <circle cx="50" cy="90" r="3" fill="var(--accent)" class="circuit-node" />
+        <circle cx="10" cy="50" r="3" fill="var(--accent)" class="circuit-node" />
+        <circle cx="90" cy="50" r="3" fill="var(--accent)" class="circuit-node" />
+        <circle cx="40" cy="50" r="3" fill="var(--secondary)" class="circuit-node" />
+        <circle cx="60" cy="50" r="3" fill="var(--secondary)" class="circuit-node" />
+        <circle cx="70" cy="30" r="2" fill="var(--primary)" class="circuit-node" />
+        <circle cx="30" cy="30" r="2" fill="var(--primary)" class="circuit-node" />
+        <circle cx="70" cy="60" r="2" fill="var(--accent)" class="circuit-node" />
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#circuit-pattern)" />
+    </svg>
+    <div class="particles"></div>
+    <div class="geometric-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+      <div class="shape shape-6"></div>
+    </div>
+    <div class="rotating-circuit">
+      <svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <g class="rotating-element">
+          <circle cx="250" cy="250" r="200" fill="none" stroke="rgba(0, 255, 204, 0.03)" stroke-width="2" />
+          <circle cx="250" cy="250" r="150" fill="none" stroke="rgba(102, 16, 242, 0.02)" stroke-width="1.5" />
+          <path d="M250 50 L250 450" stroke="rgba(255, 62, 85, 0.02)" stroke-width="1" />
+          <path d="M50 250 L450 250" stroke="rgba(255, 62, 85, 0.02)" stroke-width="1" />
+          <path d="M100 100 L400 400" stroke="rgba(0, 255, 204, 0.02)" stroke-width="1.5" />
+          <path d="M100 400 L400 100" stroke="rgba(0, 255, 204, 0.02)" stroke-width="1.5" />
+          <circle cx="250" cy="50" r="5" fill="rgba(0, 255, 204, 0.1)" />
+          <circle cx="250" cy="450" r="5" fill="rgba(0, 255, 204, 0.1)" />
+          <circle cx="50" cy="250" r="5" fill="rgba(255, 62, 85, 0.1)" />
+          <circle cx="450" cy="250" r="5" fill="rgba(255, 62, 85, 0.1)" />
+          <circle cx="100" cy="100" r="5" fill="rgba(102, 16, 242, 0.1)" />
+          <circle cx="400" cy="400" r="5" fill="rgba(102, 16, 242, 0.1)" />
+          <circle cx="100" cy="400" r="5" fill="rgba(102, 16, 242, 0.1)" />
+          <circle cx="400" cy="100" r="5" fill="rgba(102, 16, 242, 0.1)" />
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">SYED.DEV</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div id="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 60vh;">
+      <h1 class="glitch-text">Syed Raqueed Bin Alvee</h1>
+      <h2 class="subtitle">Electrical Engineer | Embedded Systems Expert</h2>
+      <p class="hero-text" style="max-width: 600px;">
+        I'm an Embedded Systems Engineer specializing in firmware development, test automation, and real-time hardware integration. With a background in both industry and research, I bring a unique blend of hands-on engineering and machine learning insight to build scalable, reliable solutions across IoT platforms.
+      </p>      
+      <div class="cta-buttons" style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+        <a href="#about" class="btn btn-secondary">
+          <i class="fas fa-user"></i> About Me
+        </a>
+      </div>
+    </div>
+    <div class="scroll-down" id="scrollDown" style="display: flex; justify-content: center; margin-top: 2rem;">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="asset/profile.jpeg" alt="Syed Raqueed Bin Alvee">
+      </div>
+      <div class="about-content">
+        <h3>Engineer. Builder. Problem Solver</h3>
+        <p>
+          I’m Syed, an Electrical Engineer based in Chicago, with a deep focus on firmware development, test automation, and systems integration. Whether I’m building a DMA-powered UART passthrough, developing a PyTest-based CI framework, or standardizing memory maps with machine learning, I’m driven by curiosity and a desire to create efficient, reliable systems.
+        </p>
+        
+        <p>
+          My work bridges low-level embedded systems with high-level testing automation — combining attention to detail with scalable architecture. I enjoy turning complex challenges into elegant solutions, and I’m always seeking ways to simplify workflows and optimize performance.
+        </p>
+        
+        <p>
+          I thrive in collaborative, fast-paced environments and bring strong communication, sprint planning, and mentoring experience to every team I work with.
+        </p>
+        
+        <p>Core expertise:</p>
+        <div class="about-skills">
+          <span class="skill-chip" title="Low-level firmware for embedded systems, including drivers, peripherals, and state machines."><i class="fas fa-microchip"></i> Firmware Development</span>
+        
+          <span class="skill-chip" title="Systems-level coding for microcontrollers and embedded hardware platforms."><i class="fas fa-code"></i> Embedded C/C++</span>
+        
+          <span class="skill-chip" title="Modern systems programming for memory-safe embedded development and tooling."><i class="fab fa-rust"></i> Rust</span>
+        
+          <span class="skill-chip" title="Used across scripting, automation, ML, and data analysis pipelines."><i class="fab fa-python"></i> Python</span>
+        
+          <span class="skill-chip" title="Jenkins pipelines, GitHub Actions, and automated build/test processes."><i class="fas fa-cogs"></i> CI/CD Integration</span>
+        
+          <span class="skill-chip" title="Hands-on development with STM32 MCUs using HAL and Low-Layer libraries."><i class="fas fa-microchip"></i> STM32 (HAL/LL)</span>
+        
+          <span class="skill-chip" title="Framework and script development for test automation using PyTest and Jenkins."><i class="fas fa-vials"></i> Test Automation (PyTest, Jenkins)</span>
+        
+          <span class="skill-chip" title="Experience planning agile sprints, writing specs, and managing execution."><i class="fas fa-project-diagram"></i> Sprint Planning & Management</span>
+        
+          <span class="skill-chip" title="DevOps tooling for project tracking, pipelines, and traceability."><i class="fas fa-cloud"></i> Azure DevOps</span>
+        
+          <span class="skill-chip" title="Version control and collaboration for all software and firmware work."><i class="fab fa-git-alt"></i> Git</span>
+        
+          <span class="skill-chip" title="Applied to firmware threat detection, memory map analysis, and classification."><i class="fas fa-brain"></i> Machine Learning</span>
+        
+          <span class="skill-chip" title="Using Pandas, NumPy, and visualization to make sense of firmware data."><i class="fas fa-chart-line"></i> Data Analysis</span>
+        </div>                
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <span class="timeline-year">June 2022 - Present</span>
+          <h3 class="timeline-title">Electrical Engineer – II, Platform IoT</h3>
+          <h4 class="timeline-subtitle">Milwaukee Tool, Chicago, Illinois</h4>
+          <div class="timeline-desc">
+            <ul>
+              <li>Develop and debug firmware for embedded systems across various hardware platforms, supporting both prototyping and production-level applications.</li>
+              <li>Contribute to firmware validation using unit testing frameworks and assist in hardware-level bring-up and troubleshooting.</li>
+              <li>Design and implement Python-based automation scripts for embedded system testing, improving test coverage and repeatability.</li>
+              <li>Building a scalable test framework using Jenkins and PyTest with plans for full CI integration, including compilation, testing, and static analysis.</li>
+              <li>Led a memory map analysis initiative using machine learning techniques to improve data consistency across multiple tools and platforms.</li>
+              <li>Collaborate with cross-functional teams across Platform Engineering to support IoT hardware and firmware development; manage team sprints using Azure DevOps.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <span class="timeline-year">May 2021 - June 2022</span>
+          <h3 class="timeline-title">Graduate Research Assistant</h3>
+          <h4 class="timeline-subtitle">Cyber-Physical Power and Energy System Laboratory, Texas A&M University - Kingsville</h4>
+          <div class="timeline-desc">
+            <p><strong>Research Projects:</strong></p>
+            <ul>
+              <li>"Cybersecurity Function for Power Transformer Diagnosis Systems" (Funded by Korea Electrotechnology Research Institute – KERI)</li>
+              <li>"Multilevel Cybersecurity for Photovoltaic Systems" (Funded by U.S. Department of Energy – DOE, SETO)</li>
+            </ul>
+            <p><strong>Key Contributions:</strong></p>
+            <ul>
+              <li>Developed AI-based ransomware detection for digital substations by converting binary files into grayscale images and training CNN models, achieving 96% detection accuracy.</li>
+              <li>Modeled advanced persistent threat (APT) attacks on power transformer diagnosis systems and contributed to the development of a real-time cyber-physical testbed for penetration testing.</li>
+              <li>Proposed a deep transfer learning (DTL) framework for detecting firmware malware in smart inverters, reaching 98% detection accuracy while reducing training effort.</li>
+              <li>Designed ransomware threat models for photovoltaic systems, executed simulated attacks using a hardware-in-the-loop (HIL) testbed, and analyzed system vulnerabilities and impacts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <span class="timeline-year">Jan 2021 - May 2021</span>
+          <h3 class="timeline-title">Graduate Teaching Assistant</h3>
+          <h4 class="timeline-subtitle">Texas A&M University-Kingsville, Texas</h4>
+          <div class="timeline-desc">
+            <ul>
+              <li>TA for the courses: Digital Signal Processing and Speech Processing</li>
+              <li>Developed lesson plans that incorporated a variety of teaching methods, resulting in improved student learning outcomes</li>
+              <li>Researched on best practices in online and hybrid teaching to improve student learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title">Professional Skills</h2>
+    <div class="skill-grid">
+
+      <div class="skill-card">
+        <h4>Programming Languages</h4>
+        <ul>
+          <li>C / C++</li>
+          <li>Python</li>
+          <li>Rust</li>
+          <li>R</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Embedded & Firmware</h4>
+        <ul>
+          <li>STM32 (HAL/LL), BSP</li>
+          <li>Google Unit Test Framework</li>
+          <li>UART, DMA, GPIO, I2C, SPI</li>
+          <li>Real-time Debugging (FTDI, Logic Analyzer)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Test Automation & HIL</h4>
+        <ul>
+          <li>PyTest Test Frameworks</li>
+          <li>Jenkins CI/CD Pipelines</li>
+          <li>Hardware-in-the-Loop Testing</li>
+          <li>OpenLink Protocol Parsing</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Electrical Engineering</h4>
+        <ul>
+          <li>PCB Design (Altium)</li>
+          <li>HW Testing & Validation</li>
+          <li>Signal Debugging & Oscilloscope</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Cloud & DevOps</h4>
+        <ul>
+          <li>AWS Athena</li>
+          <li>MQTT Device Handling</li>
+          <li>Firmware Build Pipelines</li>
+          <li>Azure DevOps, Git, GitHub</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Data Science & ML</h4>
+        <ul>
+          <li>Pandas, NumPy, Scikit-learn</li>
+          <li>NLP, K-Means Clustering</li>
+          <li>Computer Vision (CNN, OpenCV)</li>
+          <li>Malware Detection (Binary Classification)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Communication Protocols</h4>
+        <ul>
+          <li>MQTT</li>
+          <li>CoAP</li>
+          <li>HTTP</li>
+          <li>CANopen</li>
+          <li>Zigbee</li>
+        </ul>
+      </div>
+      
+
+      <div class="skill-card">
+        <h4>Collaboration & Process</h4>
+        <ul>
+          <li>Sprint Planning & Agile</li>
+          <li>Test Plan Writing</li>
+          <li>Team Onboarding</li>
+          <li>JAMA, STM32CubeIDE, VS Code</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <div class="education-header">
+          <h4>Master of Science</h4>
+          <p>Electrical Engineering</p>
+          <div class="education-year">2022</div>
+        </div>
+        <div class="education-body">
+          <p><strong>Institution:</strong> Texas A&M University – Kingsville</p>
+          <p><strong>College:</strong> Frank H. Dotterweich College of Engineering</p>
+          <p><strong>Location:</strong> USA</p>
+        </div>
+      </div>
+      <div class="education-card">
+        <div class="education-header">
+          <h4>Bachelor of Science</h4>
+          <p>Electrical Engineering and Electronic Engineering</p>
+          <div class="education-year">2020</div>
+        </div>
+        <div class="education-body">
+          <p><strong>Institution:</strong> American International University - Bangladesh</p>
+          <p><strong>Faculty:</strong> Faculty of Engineering</p>
+          <p><strong>Location:</strong> Bangladesh</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <h2 class="section-title">Research and Publications</h2>
+    <div class="publications-wrapper">
+      <div class="publication-card">
+        <h3 class="publication-title">Ransomware Attack Modeling and Artificial Intelligence-Based Ransomware Detection for Digital Substations</h3>
+        <p class="publication-authors">S. R. B. Alvee, B. Ahn, T. Kim, Y. Su, Y. Youn and M. Ryu</p>
+        <p class="publication-conference">2021 6th IEEE Workshop on the Electronic Grid (eGRID), New Orleans, LA, USA, 2021, pp. 01-05</p>
+        <a href="#" class="publication-link">View Publication <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="publication-card">
+        <h3 class="publication-title">Device-Centric Firmware Malware Detection for Smart Inverters using Deep Transfer Learning</h3>
+        <p class="publication-authors">S. R. B. Alvee, B. Ahn, S. Ahmad, K. -T. Kim, T. Kim and J. Zeng</p>
+        <p class="publication-conference">2022 IEEE Design Methodologies Conference (DMC), Bath, United Kingdom, 2022, pp. 1-5</p>
+        <a href="#" class="publication-link">View Publication <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="publication-card">
+        <h3 class="publication-title">Advanced Persistent Threat (APT)-Style Attack Modeling and Testbed for Power Transformer Diagnosis System in a Substation</h3>
+        <p class="publication-authors">S. Ahmad et al.</p>
+        <p class="publication-conference">2022 IEEE Power & Energy Society Innovative Smart Grid Technologies Conference (ISGT), New Orleans, LA, USA, 2022, pp. 1-5</p>
+        <a href="#" class="publication-link">View Publication <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="publication-card">
+        <h3 class="publication-title">Ransomware Security Threat Modeling for Photovoltaic Systems</h3>
+        <p class="publication-authors">Y. Su, B. Ahn, S. R. B. Alvee, T. Kim, J. Choi and S. C. Smith</p>
+        <p class="publication-conference">2021 6th IEEE Workshop on the Electronic Grid (eGRID), New Orleans, LA, USA, 2021, pp. 01-05</p>
+        <a href="#" class="publication-link">View Publication <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="publication-card">
+        <h3 class="publication-title">On-Body Humidity Sensing Antenna with Polyimide for BAN Applications over 5G Networks</h3>
+        <p class="publication-authors">M. M. Rahman, M. A. Nayeem, S. Nahid, S. R. Bin Alvee, R. Rashidul Hasan and M. A. Rahman</p>
+        <p class="publication-conference">2020 IEEE International IOT, Electronics and Mechatronics Conference (IEMTRONICS), Vancouver, BC, Canada, 2020, pp. 1-7</p>
+        <a href="#" class="publication-link">View Publication <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Location</h4>
+            <p>Chicago, IL, USA</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Email</h4>
+            <a href="mailto:raqueed@outlook.com">raqueed@outlook.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Phone</h4>
+            <a href="tel:+13612281452">+1 (361) 228-1452</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="contact-details">
+            <h4>LinkedIn</h4>
+            <a href="https://linkedin.com/in/raqueed" target="_blank">linkedin.com/in/raqueed</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" class="form-control" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/raqueed" target="_blank" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:raqueed@outlook.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p class="copyright">© 2025 Adrijeet Deb. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
