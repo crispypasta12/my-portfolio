@@ -1,0 +1,30 @@
+{
+  "last_updated": "2025-07-11T23:01:44.911517",
+  "totalCitations": 66,
+  "papers": [
+    {
+      "title": "Ransomware attack modeling and artificial intelligence-based ransomware detection for digital substations",
+      "citations": 32
+    },
+    {
+      "title": "Device-centric firmware malware detection for smart inverters using deep transfer learning",
+      "citations": 10
+    },
+    {
+      "title": "Advanced persistent threat (APT)-style attack modeling and testbed for power transformer diagnosis system in a substation",
+      "citations": 10
+    },
+    {
+      "title": "Ransomware security threat modeling for photovoltaic systems",
+      "citations": 7
+    },
+    {
+      "title": "On-body humidity sensing antenna with polyimide for BAN applications over 5G networks",
+      "citations": 7
+    },
+    {
+      "title": "Study on Artificial Intelligence-Based Ransomware Detection for Digital Substations",
+      "citations": 0
+    }
+  ]
+}
