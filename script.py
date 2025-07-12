@@ -1,6 +1,7 @@
 import json
 import requests
 from datetime import datetime
+import os
 
 API_KEY = "99b3546be0bf72919db53542eb0597c09ddfbef6c5b543239296e697f906bab0"
 AUTHOR_ID = "tQTSPM0AAAAJ"
